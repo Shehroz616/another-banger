@@ -1,5 +1,217 @@
-.side-bar{
-    width: 100px;
-    background-color: #1b1f38;
+.side-bar {
+    width: 120px;
+    background-color: #252422;
     min-height: 100vh;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.8);
+}
+
+.side-menu ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 25px;
+}
+
+.side-menu li {
+    position: relative;
+    margin-top: 5px;
+}
+
+.side-menu li a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.side-menu li.active {
+    background-color: #b66324;
+}
+
+.side-menu li.active::after {
+    display: none;
+}
+
+.side-menu li a i {
+    font-size: 20px;
+    margin: 0px 10px;
+}
+
+.main {
+    width: calc(100% - 120px);
+    margin-left: auto;
+    background-color: #16130e;
+}
+
+.header {
+    background-color: #252422;
+    padding: 16px 25px;
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    border-radius: 5px 0px 0px 5px;
+    margin: 0px;
+    padding: 5px;
+}
+
+.search-container .serarch-btn {
+    border: none;
+    background-color: transparent;
+    color: white;
+    background-color: #b66324;
+    padding: 5px 10px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.theme-color {
+    color: #b66324;
+}
+
+.theme-btns {
+    background-color: #b66324;
+    border-radius: 25rem;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    min-width: 100px;
+}
+
+.hero-section {
+    /* background: url(../img/singers.jpg); */
+    background-size: cover;
+    background-position: top;
+}
+.hero-section .container-fluid{
+    /* background: linear-gradient(90deg, #b66324c8,#b6632484); */
+}
+
+.mega-heading {
+    color: white;
+    font-size: 3rem;
+}
+
+.mega-heading span {
+    color: #b66324;
+}
+
+.main-text {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.white-btn{
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    padding: 5px 20px;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+.white-trans-btn{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+.white-btn:hover{
+    background-color: transparent;
+    color: white;
+}
+.white-trans-btn:hover{
+    background-color: white;
+    color: black;
+}
+.theme-container{
+    background-color: #252422;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px 0px;
+}
+.song-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.song-name{
+    display: flex;
+    align-items: center;
+    width: 35%;
+    max-width: 35%;
+}
+.song-name img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.song-name span{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+.album-name{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    width: 15%;
+    max-width: 15%;
+    text-align: center;
+}
+.song-time{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    width: 15%;
+    max-width: 15%;
+    text-align: center;
+}
+.song-views{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 15%;
+    max-width: 15%;
+}
+.song-views i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+.link-play-btn{
+    width: 20%;
+    max-width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+.section-heading{
+    color: #b66324;
+    font-size: 18px;
+}
+.view-more{
+    color: white;
+    text-decoration: none;
+    transition: all .3s;
+}
+.view-more:hover{
+    color: #b66324;
 }
